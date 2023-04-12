@@ -1,0 +1,27 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   print_error_bonus.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mberri <mberri@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/06/15 13:17:32 by mberri            #+#    #+#             */
+/*   Updated: 2022/06/24 19:39:13 by mberri           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "../so_long_bonus.h"
+
+void	print_error(char *str)
+{
+	write(1, "Error\n", 6);
+	ft_putstr(str);
+	exit(0);
+}
+
+int	destroy_notify(t_game *game)
+{
+	ft_putstr("EXITED SUCCESFULLY\n");
+	exit_game(game);
+	return (1);
+}
